@@ -363,7 +363,7 @@ body {
 .hero {
     min-height: 90vh;
     max-height: 110vh;
-    background-image: url("/assets/temp/background-light_M.jpg");
+    background-image: url("assets/temp/background-light_M.jpg");
     background-size: cover;
     background-position: center 60%;
     background-repeat: no-repeat;
@@ -991,7 +991,7 @@ body {
 }
 
 [data-theme="dark"] .hero {
-    background-image: url("/assets/temp/background-dark_M1.png");
+    background-image: url("assets/temp/background-dark_M1.png");
 }
 
 /* Dark mode overlay */
