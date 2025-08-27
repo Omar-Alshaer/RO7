@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ro7 Art Hub - Fine Arts Supplies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/featured-products.css">
+    <link rel="stylesheet" href="css/footer-styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="logo-text">Ro7</div>
+            <div class="loading-subtitle">Art Hub</div>
+            <div class="artistic-progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="main-content hidden">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <div class="logo-text">Ro7</div>
+                    <span class="logo-subtitle">Art Hub</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="shop.html" class="nav-link">Shop</a></li>
+                    <li><a href="offers.html" class="nav-link">Offers</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="cart.html" class="nav-link cart-icon">
+                        <span class="cart-count">0</span>
+                        🛒
+                    </a></li>
+                </ul>
+                <button class="theme-toggle" id="theme-toggle" data-theme="light">
+                    <span class="icon sun-icon">☀️</span>
+                    <span class="icon moon-icon">🌙</span>
+                </button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome to <span class="highlight">Ro7</span> Art Hub</h1>
+                <p class="hero-subtitle">Where creativity meets quality - Premium art supplies for passionate artists</p>
+                <div class="hero-buttons">
+                    <a href="shop.html" class="btn btn-primary">Explore Products</a>
+                    <a href="offers.html" class="btn btn-secondary">View Offers</a>
+                </div>
+            </div>
+            <div class="hero-artistic-elements">
+                <div class="floating-brush"></div>
+                <div class="paint-splash"></div>
+                <div class="artistic-frame"></div>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="featured-products">
+            <div class="container">
+                <h2 class="section-title">Featured Products</h2>
+                <div class="products-grid" id="featured-products">
+                    <!-- Featured products will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Popup -->
+        <div id="newsletter-popup" class="newsletter-popup hidden">
+            <div class="newsletter-content">
+                <div class="newsletter-header">
+                    <h3>🎨 Stay Creative!</h3>
+                    <p>Subscribe to our newsletter for exclusive art tips, new products, and special offers!</p>
+                </div>
+                <form class="newsletter-form" action="https://formspree.io/f/xkgvngjq" method="POST">
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Enter your email address" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Subscribe Now</button>
+                </form>
+                <button class="newsletter-close" id="newsletter-close">✕</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/cart-common.js"></script>
+    <script src="js/products-loader.js"></script>
+    <script src="js/home-script.js"></script>
+    <script src="js/script.js"></script>
+    
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-text">Ro7</div>
+                        <span class="logo-subtitle">Art Hub</span>
+                    </div>
+                    <p class="footer-description">
+                        The soul of art and creativity in every product. We provide the finest fine arts supplies for artists and students in Egypt.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">📺</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="offers.html">Offers</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Product Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="shop.html?category=brushes">Brushes</a></li>
+                        <li><a href="shop.html?category=paints">Paints</a></li>
+                        <li><a href="shop.html?category=canvas">Canvas</a></li>
+                        <li><a href="shop.html?category=tools">Tools</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <!-- Newsletter Section - Centered -->
+    <div class="footer-newsletter-center">
+        <div class="container">
+            <div class="newsletter-center-content">
+                <h3 class="newsletter-center-title">Stay Creative!</h3>
+                <p class="newsletter-center-description">Subscribe for exclusive art tips & offers</p>
+                <form class="newsletter-center-form" id="footer-newsletter-form">
+                    <div class="newsletter-center-input-group">
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                        <button type="submit" class="newsletter-center-submit-btn">
+                            <span class="btn-text">Subscribe</span>
+                        </button>
+                    </div>
+                </form>
+                <div class="newsletter-message" id="newsletter-message"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Artistic Elements -->
+            </div>
+        </div>
+    </div>
+        
+    <!-- Artistic Elements -->
+    <div class="footer-artistic">
+        <div class="artistic-line"></div>
+        <div class="artistic-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="artistic-line"></div>
+    </div>
+    
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom-content">
+                <div class="copyright">
+                    <p>&copy; 2025 Ro7 Art Hub. All rights reserved.</p>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Return Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

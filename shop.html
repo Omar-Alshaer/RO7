@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Ro7 Art Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/shop-styles.css">
+    <link rel="stylesheet" href="css/footer-styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-text">Ro7</div>
+                <span class="logo-subtitle">Art Hub</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="shop.html" class="nav-link active">Shop</a></li>
+                <li><a href="offers.html" class="nav-link">Offers</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                                    <li><a href="cart.html" class="nav-link cart-icon">
+                        <span class="cart-count">0</span>
+                        🛒
+                    </a></li>
+                </ul>
+                <button class="theme-toggle" id="theme-toggle" data-theme="light">
+                    <span class="icon sun-icon">☀️</span>
+                    <span class="icon moon-icon">🌙</span>
+                </button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+        </div>
+    </nav>
+
+    <!-- Shop Header -->
+    <section class="shop-header">
+        <div class="container">
+            <h1 class="shop-title">Our Products</h1>
+            <p class="shop-subtitle">Discover premium art supplies for your creative journey</p>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="filters-section">
+        <div class="container">
+            <div class="filters-container">
+                <div class="filter-group">
+                    <label for="category-filter">Category:</label>
+                    <select id="category-filter">
+                        <option value="">All Categories</option>
+                        <option value="brushes">Brushes</option>
+                        <option value="paints">Paints</option>
+                        <option value="canvas">Canvas</option>
+                        <option value="tools">Tools</option>
+                        <option value="paper">Paper</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="price-filter">Price Range:</label>
+                    <select id="price-filter">
+                        <option value="">All Prices</option>
+                        <option value="0-50">EGP 0 - 50</option>
+                        <option value="50-100">EGP 50 - 100</option>
+                        <option value="100-200">EGP 100 - 200</option>
+                        <option value="200+">EGP 200+</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="offers-filter">Offers:</label>
+                    <select id="offers-filter">
+                        <option value="">All Items</option>
+                        <option value="on-sale">On Sale</option>
+                        <option value="new">New Arrivals</option>
+                    </select>
+                </div>
+                
+                <button id="clear-filters" class="btn btn-outline">Clear Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid" id="products-grid">
+                <!-- Product 1 -->
+                <a href="product.html?id=1" class="product-card-link">
+                    <div class="product-card" data-category="brushes" data-price="150" data-offer="on-sale">
+                        <div class="product-image">
+                            <img src="assets/temp/ro7_story.png" alt="Professional Brush Set">
+                            <div class="product-badges">
+                                <span class="sale-badge">SALE</span>
+                                <span class="discount-percentage">-17%</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Professional Brush Set</h3>
+                            <div class="product-rating">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <span class="rating-count">(127)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">EGP 150</span>
+                                <span class="original-price">EGP 180</span>
+                            </div>
+                            <div class="product-actions">
+                                                        <button class="btn btn-primary add-to-cart" data-id="1" data-name="Professional Brush Set" data-price="150">🛒 Add to Cart</button>
+                        <button class="btn btn-outline wishlist-btn" onclick="window.wishlistManager.addToWishlist({id: '1', name: 'Professional Brush Set', price: '150', image: 'assets/temp/ro7_story.png'})">♡</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Product 2 -->
+                <a href="product.html?id=2" class="product-card-link">
+                    <div class="product-card" data-category="canvas" data-price="200" data-offer="">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/300x300/E5A657/B53324?text=Canvas+Roll" alt="Premium Canvas Roll">
+                            <div class="product-badges">
+                                <span class="new-badge">NEW</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Premium Canvas Roll</h3>
+                            <div class="product-rating">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <span class="rating-count">(89)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">EGP 200</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary add-to-cart" data-id="2" data-name="Premium Canvas Roll" data-price="200">Add to Cart</button>
+                                <button class="btn btn-secondary wishlist-btn" onclick="window.wishlistManager.addToWishlist({id: '2', name: 'Premium Canvas Roll', price: '200', image: 'https://via.placeholder.com/300x300/E5A657/B53324?text=Canvas+Roll'})">♡</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Product 3 -->
+                <a href="product.html?id=3" class="product-card-link">
+                    <div class="product-card" data-category="paints" data-price="180" data-offer="on-sale">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/300x300/F5E2CE/B53324?text=Acrylic+Set" alt="Acrylic Paint Set">
+                            <div class="product-badges">
+                                <span class="sale-badge">SALE</span>
+                                <span class="discount-percentage">-18%</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Acrylic Paint Set</h3>
+                            <div class="product-rating">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <span class="rating-count">(156)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">EGP 180</span>
+                                <span class="original-price">EGP 220</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary add-to-cart" data-id="3" data-name="Acrylic Paint Set" data-price="180">Add to Cart</button>
+                                <button class="btn btn-secondary wishlist-btn" onclick="window.wishlistManager.addToWishlist({id: '3', name: 'Acrylic Paint Set', price: '180', image: 'https://via.placeholder.com/300x300/F5E2CE/B53324?text=Acrylic+Set'})">♡</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Product 4 -->
+                <a href="product.html?id=4" class="product-card-link">
+                    <div class="product-card" data-category="brushes" data-price="80" data-offer="">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/300x300/DFBC94/B53324?text=Detail+Brush" alt="Detail Brush">
+                            <div class="product-badges">
+                                <span class="best-seller-badge">BEST SELLER</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Detail Brush</h3>
+                            <div class="product-rating">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <span class="rating-count">(203)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">EGP 80</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary add-to-cart" data-id="4" data-name="Detail Brush" data-price="80">Add to Cart</button>
+                                <button class="btn btn-secondary wishlist-btn" onclick="window.wishlistManager.addToWishlist({id: '4', name: 'Detail Brush', price: '80', image: 'https://via.placeholder.com/300x300/DFBC94/B53324?text=Detail+Brush'})">♡</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Product 5 -->
+                <a href="product.html?id=5" class="product-card-link">
+                    <div class="product-card" data-category="paints" data-price="120" data-offer="new">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/300x300/E5A657/B53324?text=Oil+Paints" alt="Oil Paint Set">
+                            <div class="product-badges">
+                                <span class="new-badge">NEW</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Oil Paint Set</h3>
+                            <div class="product-rating">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <span class="rating-count">(102)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">EGP 120</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary add-to-cart" data-id="5" data-name="Oil Paint Set" data-price="120">Add to Cart</button>
+                                <button class="btn btn-secondary wishlist-btn" onclick="window.wishlistManager.addToWishlist({id: '5', name: 'Oil Paint Set', price: '120', image: 'https://via.placeholder.com/300x300/E5A657/B53324?text=Oil+Paints'})">♡</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Product 6 -->
+                <a href="product.html?id=6" class="product-card-link">
+                    <div class="product-card" data-category="paper" data-price="60" data-offer="">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/300x300/F5E2CE/B53324?text=Sketch+Paper" alt="Sketch Paper">
+                            <div class="product-badges">
+                                <span class="best-seller-badge">BEST SELLER</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Sketch Paper Pack</h3>
+                            <div class="product-rating">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <span class="rating-count">(180)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">EGP 60</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary add-to-cart" data-id="6" data-name="Sketch Paper Pack" data-price="60">Add to Cart</button>
+                                <button class="btn btn-secondary wishlist-btn" onclick="window.wishlistManager.addToWishlist({id: '6', name: 'Sketch Paper Pack', price: '60', image: 'https://via.placeholder.com/300x300/F5E2CE/B53324?text=Sketch+Paper'})">♡</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Product 7 -->
+                <a href="product.html?id=7" class="product-card-link">
+                    <div class="product-card" data-category="tools" data-price="90" data-offer="">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/300x300/DFBC94/B53324?text=Palette" alt="Artist Palette">
+                            <div class="product-badges">
+                                <span class="best-seller-badge">BEST SELLER</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Artist Palette</h3>
+                            <div class="product-rating">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <span class="rating-count">(115)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">EGP 90</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary add-to-cart" data-id="7" data-name="Artist Palette" data-price="90">Add to Cart</button>
+                                <button class="btn btn-secondary wishlist-btn" onclick="window.wishlistManager.addToWishlist({id: '7', name: 'Artist Palette', price: '90', image: 'https://via.placeholder.com/300x300/DFBC94/B53324?text=Palette'})">♡</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Product 8 -->
+                <a href="product.html?id=8" class="product-card-link">
+                    <div class="product-card" data-category="brushes" data-price="110" data-offer="on-sale">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/300x300/E5A657/B53324?text=Watercolor+Brush" alt="Watercolor Brush">
+                            <div class="product-badges">
+                                <span class="sale-badge">SALE</span>
+                                <span class="discount-percentage">-15%</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Watercolor Brush</h3>
+                            <div class="product-rating">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <span class="rating-count">(98)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">EGP 110</span>
+                                <span class="original-price">EGP 130</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary add-to-cart" data-id="8" data-name="Watercolor Brush" data-price="110">Add to Cart</button>
+                                <button class="btn btn-secondary wishlist-btn" onclick="window.wishlistManager.addToWishlist({id: '8', name: 'Watercolor Brush', price: '110', image: 'https://via.placeholder.com/300x300/E5A657/B53324?text=Watercolor+Brush'})">♡</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Product 9 -->
+                <a href="product.html?id=9" class="product-card-link">
+                    <div class="product-card" data-category="paints" data-price="160" data-offer="">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/300x300/F5E2CE/B53324?text=Watercolor+Set" alt="Watercolor Set">
+                            <div class="product-badges">
+                                <span class="best-seller-badge">BEST SELLER</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Watercolor Set</h3>
+                            <div class="product-rating">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <span class="rating-count">(120)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">EGP 160</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary add-to-cart" data-id="9" data-name="Watercolor Set" data-price="160">Add to Cart</button>
+                                <button class="btn btn-secondary wishlist-btn" onclick="window.wishlistManager.addToWishlist({id: '9', name: 'Watercolor Set', price: '160', image: 'https://via.placeholder.com/300x300/F5E2CE/B53324?text=Watercolor+Set'})">♡</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Product 10 -->
+                <a href="product.html?id=10" class="product-card-link">
+                    <div class="product-card" data-category="canvas" data-price="250" data-offer="new">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/300x300/DFBC94/B53324?text=Stretched+Canvas" alt="Stretched Canvas">
+                            <div class="product-badges">
+                                <span class="new-badge">NEW</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Stretched Canvas</h3>
+                            <div class="product-rating">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <span class="rating-count">(75)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">EGP 250</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary add-to-cart" data-id="10" data-name="Stretched Canvas" data-price="250">Add to Cart</button>
+                                <button class="btn btn-secondary wishlist-btn" onclick="window.wishlistManager.addToWishlist({id: '10', name: 'Stretched Canvas', price: '250', image: 'https://via.placeholder.com/300x300/DFBC94/B53324?text=Stretched+Canvas'})">♡</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Product 11 -->
+                <a href="product.html?id=11" class="product-card-link">
+                    <div class="product-card" data-category="tools" data-price="70" data-offer="">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/300x300/E5A657/B53324?text=Easel" alt="Table Easel">
+                            <div class="product-badges">
+                                <span class="best-seller-badge">BEST SELLER</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Table Easel</h3>
+                            <div class="product-rating">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <span class="rating-count">(140)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">EGP 70</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary add-to-cart" data-id="11" data-name="Table Easel" data-price="70">Add to Cart</button>
+                                <button class="btn btn-secondary wishlist-btn" onclick="window.wishlistManager.addToWishlist({id: '11', name: 'Table Easel', price: '70', image: 'https://via.placeholder.com/300x300/E5A657/B53324?text=Easel'})">♡</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Product 12 -->
+                <a href="product.html?id=12" class="product-card-link">
+                    <div class="product-card" data-category="paper" data-price="85" data-offer="">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/300x300/F5E2CE/B53324?text=Watercolor+Paper" alt="Watercolor Paper">
+                            <div class="product-badges">
+                                <span class="best-seller-badge">BEST SELLER</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Watercolor Paper</h3>
+                            <div class="product-rating">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <span class="rating-count">(160)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">EGP 85</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary add-to-cart" data-id="12" data-name="Watercolor Paper" data-price="85">Add to Cart</button>
+                                <button class="btn btn-secondary wishlist-btn" onclick="window.wishlistManager.addToWishlist({id: '12', name: 'Watercolor Paper', price: '85', image: 'https://via.placeholder.com/300x300/F5E2CE/B53324?text=Watercolor+Paper'})">♡</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Product 13 -->
+                <a href="product.html?id=13" class="product-card-link">
+                    <div class="product-card" data-category="brushes" data-price="130" data-offer="">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/300x300/DFBC94/B53324?text=Flat+Brush" alt="Flat Brush Set">
+                            <div class="product-badges">
+                                <span class="best-seller-badge">BEST SELLER</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Flat Brush Set</h3>
+                            <div class="product-rating">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <span class="rating-count">(110)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">EGP 130</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary add-to-cart" data-id="13" data-name="Flat Brush Set" data-price="130">Add to Cart</button>
+                                <button class="btn btn-secondary wishlist-btn" onclick="window.wishlistManager.addToWishlist({id: '13', name: 'Flat Brush Set', price: '130', image: 'https://via.placeholder.com/300x300/DFBC94/B53324?text=Flat+Brush'})">♡</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Product 14 -->
+                <a href="product.html?id=14" class="product-card-link">
+                    <div class="product-card" data-category="paints" data-price="95" data-offer="on-sale">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/300x300/E5A657/B53324?text=Gouache+Set" alt="Gouache Paint Set">
+                            <div class="product-badges">
+                                <span class="sale-badge">SALE</span>
+                                <span class="discount-percentage">-10%</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Gouache Paint Set</h3>
+                            <div class="product-rating">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <span class="rating-count">(125)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">EGP 95</span>
+                                <span class="original-price">EGP 105</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary add-to-cart" data-id="14" data-name="Gouache Paint Set" data-price="95">Add to Cart</button>
+                                <button class="btn btn-secondary wishlist-btn" onclick="window.wishlistManager.addToWishlist({id: '14', name: 'Gouache Paint Set', price: '95', image: 'https://via.placeholder.com/300x300/E5A657/B53324?text=Gouache+Set'})">♡</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Product 15 -->
+                <a href="product.html?id=15" class="product-card-link">
+                    <div class="product-card" data-category="tools" data-price="140" data-offer="">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/300x300/F5E2CE/B53324?text=Art+Case" alt="Art Case">
+                            <div class="product-badges">
+                                <span class="best-seller-badge">BEST SELLER</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Portable Art Case</h3>
+                            <div class="product-rating">
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <span class="rating-count">(90)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">EGP 140</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary add-to-cart" data-id="15" data-name="Portable Art Case" data-price="140">Add to Cart</button>
+                                <button class="btn btn-secondary wishlist-btn" onclick="window.wishlistManager.addToWishlist({id: '15', name: 'Portable Art Case', price: '140', image: 'https://via.placeholder.com/300x300/F5E2CE/B53324?text=Art+Case'})">♡</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/cart-common.js"></script>
+    <script src="js/products-loader.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/shop-script.js"></script>
+    
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-text">Ro7</div>
+                        <span class="logo-subtitle">Art Hub</span>
+                    </div>
+                    <p class="footer-description">
+                        The soul of art and creativity in every product. We provide the finest fine arts supplies for artists and students in Egypt.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">📺</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="offers.html">Offers</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Product Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="shop.html?category=brushes">Brushes</a></li>
+                        <li><a href="shop.html?category=paints">Paints</a></li>
+                        <li><a href="shop.html?category=canvas">Canvas</a></li>
+                        <li><a href="shop.html?category=tools">Tools</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <!-- Newsletter Section - Centered -->
+    <div class="footer-newsletter-center">
+        <div class="container">
+            <div class="newsletter-center-content">
+                <h3 class="newsletter-center-title">Stay Creative!</h3>
+                <p class="newsletter-center-description">Subscribe for exclusive art tips & offers</p>
+                <form class="newsletter-center-form" id="footer-newsletter-form">
+                    <div class="newsletter-center-input-group">
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                        <button type="submit" class="newsletter-center-submit-btn">
+                            <span class="btn-text">Subscribe</span>
+                        </button>
+                    </div>
+                </form>
+                <div class="newsletter-message" id="newsletter-message"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Artistic Elements -->
+            </div>
+        </div>
+    </div>
+
+        <!-- Artistic Elements -->
+        <div class="footer-artistic">
+            <div class="artistic-line"></div>
+            <div class="artistic-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="artistic-line"></div>
+        </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom-content">
+                <div class="copyright">
+                    <p>&copy; 2025 Ro7 Art Hub. All rights reserved.</p>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Return Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

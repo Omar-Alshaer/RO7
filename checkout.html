@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Ro7 Art Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/checkout-styles.css">
+    <link rel="stylesheet" href="css/footer-styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-text">Ro7</div>
+                <span class="logo-subtitle">Art Hub</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="shop.html" class="nav-link">Shop</a></li>
+                <li><a href="offers.html" class="nav-link">Offers</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="cart.html" class="nav-link cart-icon">
+                    <span class="cart-count">0</span>
+                    🛒
+                </a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" data-theme="light">
+                <span class="icon sun-icon">☀️</span>
+                <span class="icon moon-icon">🌙</span>
+            </button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Checkout Header -->
+    <section class="checkout-header">
+        <div class="container">
+            <h1 class="checkout-title">Complete Your Order</h1>
+            <p class="checkout-subtitle">One step away from your art supplies</p>
+        </div>
+    </section>
+
+    <!-- Checkout Content -->
+    <section class="checkout-content">
+        <div class="container">
+            <!-- Integrated Checkout Form -->
+            <div class="checkout-container">
+                <h2 class="checkout-main-title">Complete Your Order</h2>
+                
+                <div class="checkout-layout">
+                    <!-- Left Column - Customer Information -->
+                    <div class="customer-info-column">
+                        <h3>Customer Information</h3>
+                        <form id="checkout-form" class="checkout-form" action="https://formspree.io/f/movnqlbn" method="POST">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="customer-name">Full Name *</label>
+                                    <input type="text" id="customer-name" name="name" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="customer-phone">Phone Number *</label>
+                                    <input type="tel" id="customer-phone" name="phone" required placeholder="01********">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="customer-email">Email Address *</label>
+                                <input type="email" id="customer-email" name="email" required placeholder="your.email@example.com">
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="customer-governorate">Governorate *</label>
+                                    <select id="customer-governorate" name="governorate" required>
+                                        <option value="">Select Governorate</option>
+                                        <option value="Cairo">Cairo</option>
+                                        <option value="Giza">Giza</option>
+                                        <option value="Alexandria">Alexandria</option>
+                                        <option value="Dakahlia">Dakahlia</option>
+                                        <option value="Red Sea">Red Sea</option>
+                                        <option value="Beheira">Beheira</option>
+                                        <option value="Fayoum">Fayoum</option>
+                                        <option value="Gharbiya">Gharbiya</option>
+                                        <option value="Ismailia">Ismailia</option>
+                                        <option value="Menoufia">Menoufia</option>
+                                        <option value="Minya">Minya</option>
+                                        <option value="Qaliubiya">Qaliubiya</option>
+                                        <option value="New Valley">New Valley</option>
+                                        <option value="Suez">Suez</option>
+                                        <option value="Aswan">Aswan</option>
+                                        <option value="Assiut">Assiut</option>
+                                        <option value="Beni Suef">Beni Suef</option>
+                                        <option value="Port Said">Port Said</option>
+                                        <option value="Damietta">Damietta</option>
+                                        <option value="Sharkia">Sharkia</option>
+                                        <option value="Sohag">Sohag</option>
+                                        <option value="Qena">Qena</option>
+                                        <option value="Kafr Al sheikh">Kafr Al sheikh</option>
+                                        <option value="Matrouh">Matrouh</option>
+                                        <option value="Luxor">Luxor</option>
+                                        <option value="North Sinai">North Sinai</option>
+                                        <option value="South Sinai">South Sinai</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="customer-address">Detailed Address *</label>
+                                    <textarea id="customer-address" name="address" rows="3" required placeholder="Street, Building, Apartment, Landmark..."></textarea>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="customer-notes">Additional Notes</label>
+                                <textarea id="customer-notes" name="notes" rows="2" placeholder="Any special instructions or requests..."></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="promo-code">Promo Code</label>
+                                <div class="promo-code-input">
+                                    <input type="text" id="promo-code" name="promo-code" placeholder="Enter promo code">
+                                    <button type="button" id="apply-promo" class="btn btn-secondary">Apply</button>
+                                </div>
+                                <div id="promo-message" class="promo-message"></div>
+                            </div>
+                            
+                            <!-- Hidden fields for order details -->
+                            <input type="hidden" id="order-items" name="order-items">
+                            <input type="hidden" id="order-subtotal" name="order-subtotal">
+                            <input type="hidden" id="order-shipping" name="order-shipping">
+                            <input type="hidden" id="order-discount" name="order-discount">
+                            <input type="hidden" id="order-total" name="order-total">
+                            <input type="hidden" id="order-receipt-number" name="order-receipt-number">
+                            
+                            <!-- Additional hidden fields for promo code details -->
+                            <input type="hidden" id="promo-code-applied" name="promo-code-applied">
+                            <input type="hidden" id="promo-discount-percentage" name="promo-discount-percentage">
+                            <input type="hidden" id="promo-max-discount" name="promo-max-discount">
+                            <input type="hidden" id="promo-description" name="promo-description">
+                        </form>
+                    </div>
+                    
+                    <!-- Right Column - Order Summary -->
+                    <div class="order-summary-column">
+                        <h3>Order Summary</h3>
+                        <div id="checkout-items" class="checkout-items">
+                            <!-- Items will be populated from cart -->
+                        </div>
+                        <div class="checkout-totals">
+                            <div class="total-item">
+                                <span>Subtotal:</span>
+                                <span id="checkout-subtotal">EGP 0</span>
+                            </div>
+                            <div class="total-item">
+                                <span>Shipping:</span>
+                                <span id="checkout-shipping">EGP 30</span>
+                            </div>
+                            <div id="checkout-discount-container" class="total-item discount" style="display: none;">
+                                <span>Discount:</span>
+                                <span id="checkout-discount">-EGP 0</span>
+                            </div>
+                            <div class="total-item grand-total">
+                                <span>Total:</span>
+                                <span id="checkout-total">EGP 0</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Action Buttons -->
+                        <div class="checkout-actions">
+                            <button type="submit" form="checkout-form" class="btn btn-primary submit-order-btn">
+                                <span class="btn-text">Confirm Order</span>
+                                <span class="btn-loading hidden">Processing...</span>
+                            </button>
+                            <a href="cart.html" class="btn btn-secondary">Back to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Submission Info -->
+    <section class="whatsapp-info">
+        <div class="container">
+            <div class="whatsapp-content">
+                <div class="whatsapp-icon">📧</div>
+                <h3>Order Submission via Formspree</h3>
+                <p>After submitting your order, you'll receive a confirmation email from Formspree with all your order details.</p>
+                <p class="whatsapp-number">For immediate assistance: WhatsApp +20 128 354 8248</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/cart-common.js"></script>
+    <script src="js/products-loader.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/checkout-script.js"></script>
+    
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-text">Ro7</div>
+                        <span class="logo-subtitle">Art Hub</span>
+                    </div>
+                    <p class="footer-description">
+                        The soul of art and creativity in every product. We provide the finest fine arts supplies for artists and students in Egypt.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">📺</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="offers.html">Offers</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Product Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="shop.html?category=brushes">Brushes</a></li>
+                        <li><a href="shop.html?category=paints">Paints</a></li>
+                        <li><a href="shop.html?category=canvas">Canvas</a></li>
+                        <li><a href="shop.html?category=tools">Tools</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Artistic Elements -->
+    <div class="footer-artistic">
+        <div class="artistic-line"></div>
+        <div class="artistic-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="artistic-line"></div>
+    </div>    
+    
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom-content">
+                <div class="copyright">
+                    <p>&copy; 2025 Ro7 Art Hub. All rights reserved.</p>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Return Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,1126 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "sku": "BRUSH-001",
+      "name": "Professional Brush Set",
+      "category": "brushes",
+      "currentPrice": 150,
+      "originalPrice": 180,
+      "discount": 17,
+      "availability": 45,
+      "rating": 4.8,
+      "reviewsCount": 127,
+      "featured": true,
+      "mainImage": "assets/products/sk1.png",
+      "gallery": [
+        "assets/products/sk1.png",
+        "assets/products/sk1.png",
+        "assets/products/sk1.png",
+        "assets/products/sk1.png"
+      ],
+      "shortDescription": "Premium quality art brushes perfect for fine arts students and professional artists.",
+      "longDescription": "Our Professional Art Brush Set is crafted with the finest materials to provide artists with the tools they need to create masterpieces. Each brush is carefully selected and tested to ensure optimal performance.",
+      "features": [
+        "Premium synthetic bristles for smooth application",
+        "Ergonomic wooden handles for comfortable grip",
+        "Multiple sizes for various painting techniques",
+        "Durable construction for long-lasting use",
+        "Perfect for acrylic, oil, and watercolor paints"
+      ],
+      "perfectFor": [
+        "Fine arts students",
+        "Professional artists",
+        "Art enthusiasts",
+        "Studio work",
+        "Outdoor painting"
+      ],
+      "specifications": {
+        "material": "Synthetic Bristles, Wooden Handle",
+        "brushSizes": "#2, #4, #6, #8, #10, #12",
+        "handleLength": "8 inches (20.3 cm)",
+        "bristleLength": "0.5 - 1.5 inches (1.3 - 3.8 cm)",
+        "weight": "0.8 lbs (0.36 kg)",
+        "packageDimensions": "12\" x 8\" x 2\" (30.5 x 20.3 x 5.1 cm)"
+      },
+      "sizes": [
+        {"name": "Small", "multiplier": 1.0, "price": 150},
+        {"name": "Medium", "multiplier": 1.2, "price": 180},
+        {"name": "Large", "multiplier": 1.5, "price": 225}
+      ],
+      "reviews": [
+        {
+          "name": "Ahmed M.",
+          "rating": 5,
+          "date": "2 days ago",
+          "text": "Excellent quality brushes! Perfect for my art classes. The bristles are soft and hold paint well."
+        },
+        {
+          "name": "Fatima K.",
+          "rating": 5,
+          "date": "1 week ago",
+          "text": "Great value for money. The set includes all the brush sizes I need for different painting techniques."
+        },
+        {
+          "name": "Omar S.",
+          "rating": 4,
+          "date": "2 weeks ago",
+          "text": "Good quality brushes, though I wish the handles were a bit longer. Overall satisfied with the purchase."
+        }
+      ],
+      "shipping": {
+        "standard": {
+          "name": "Standard Delivery",
+          "description": "Free shipping on orders over EGP 500",
+          "time": "2-5 business days",
+          "cost": 30
+        },
+        "express": {
+          "name": "Express Delivery",
+          "description": "Next day delivery available",
+          "time": "1-2 business days",
+          "cost": 60
+        }
+      }
+    },
+    {
+      "id": "2",
+      "sku": "CANVAS-001",
+      "name": "Premium Canvas Roll",
+      "category": "canvas",
+      "currentPrice": 200,
+      "originalPrice": 250,
+      "discount": 20,
+      "availability": 30,
+      "rating": 4.6,
+      "reviewsCount": 89,
+      "featured": true, 
+      "mainImage": "https://via.placeholder.com/600x500/E5A657/B53324?text=Canvas+Roll",
+      "gallery": [
+        "https://via.placeholder.com/600x500/E5A657/B53324?text=Canvas+1",
+        "https://via.placeholder.com/600x500/DFBC94/B53324?text=Canvas+2",
+        "https://via.placeholder.com/600x500/F5E2CE/B53324?text=Canvas+3"
+      ],
+      "shortDescription": "High-quality canvas roll perfect for large paintings and murals.",
+      "longDescription": "Our Premium Canvas Roll is made from 100% cotton with a medium texture that's perfect for both oil and acrylic paints. The canvas is primed and ready to use.",
+      "features": [
+        "100% cotton canvas",
+        "Medium texture surface",
+        "Pre-primed and ready to use",
+        "Perfect for oil and acrylic paints",
+        "Rolled for easy storage and transport"
+      ],
+      "perfectFor": [
+        "Large paintings",
+        "Murals",
+        "Studio work",
+        "Professional artists",
+        "Art students"
+      ],
+      "specifications": {
+        "material": "100% Cotton Canvas",
+        "texture": "Medium",
+        "weight": "12 oz per square yard",
+        "width": "60 inches (152 cm)",
+        "length": "10 yards (9.1 meters)",
+        "priming": "Pre-primed with acrylic gesso"
+      },
+      "sizes": [
+        {"name": "Standard", "multiplier": 1.0, "price": 200}
+      ],
+      "reviews": [
+        {
+          "name": "Sarah A.",
+          "rating": 5,
+          "date": "3 days ago",
+          "text": "Excellent quality canvas! Perfect texture for my oil paintings."
+        },
+        {
+          "name": "Mohamed R.",
+          "rating": 4,
+          "date": "1 week ago",
+          "text": "Good quality, though a bit expensive. The texture is perfect for my work."
+        }
+      ],
+      "shipping": {
+        "standard": {
+          "name": "Standard Delivery",
+          "description": "Free shipping on orders over EGP 500",
+          "time": "2-5 business days",
+          "cost": 30
+        },
+        "express": {
+          "name": "Express Delivery",
+          "description": "Next day delivery available",
+          "time": "1-2 business days",
+          "cost": 60
+        }
+      }
+    },
+    {
+      "id": "3",
+      "sku": "PAINT-001",
+      "name": "Acrylic Paint Set",
+      "category": "paints",
+      "currentPrice": 180,
+      "originalPrice": 220,
+      "discount": 18,
+      "availability": 60,
+      "rating": 4.7,
+      "reviewsCount": 156,
+      "featured": true,
+      "mainImage": "https://via.placeholder.com/600x500/F5E2CE/B53324?text=Acrylic+Set",
+      "gallery": [
+        "https://via.placeholder.com/600x500/F5E2CE/B53324?text=Acrylic+1",
+        "https://via.placeholder.com/600x500/DFBC94/B53324?text=Acrylic+2",
+        "https://via.placeholder.com/600x500/E5A657/B53324?text=Acrylic+3"
+      ],
+      "shortDescription": "Professional acrylic paint set with vibrant colors and excellent coverage.",
+      "longDescription": "Our Acrylic Paint Set features high-quality pigments that provide excellent coverage and vibrant colors. These paints dry quickly and are perfect for both beginners and professional artists.",
+      "features": [
+        "High-quality pigments",
+        "Excellent coverage",
+        "Quick drying time",
+        "Water-soluble",
+        "Non-toxic and safe"
+      ],
+      "perfectFor": [
+        "Canvas painting",
+        "Paper artwork",
+        "Fabric painting",
+        "Mixed media",
+        "Art classes"
+      ],
+      "specifications": {
+        "material": "Acrylic Polymer",
+        "colors": "24 colors",
+        "volume": "24ml per tube",
+        "dryingTime": "15-30 minutes",
+        "opacity": "Opaque",
+        "viscosity": "Medium"
+      },
+      "sizes": [
+        {"name": "24 Colors", "multiplier": 1.0, "price": 180},
+        {"name": "12 Colors", "multiplier": 0.6, "price": 108},
+        {"name": "36 Colors", "multiplier": 1.4, "price": 252}
+      ],
+      "reviews": [
+        {
+          "name": "Layla H.",
+          "rating": 5,
+          "date": "1 day ago",
+          "text": "Amazing colors! Very vibrant and easy to work with."
+        },
+        {
+          "name": "Karim F.",
+          "rating": 5,
+          "date": "4 days ago",
+          "text": "Perfect for my art classes. Colors are rich and blend well."
+        }
+      ],
+      "shipping": {
+        "standard": {
+          "name": "Standard Delivery",
+          "description": "Free shipping on orders over EGP 500",
+          "time": "2-5 business days",
+          "cost": 30
+        },
+        "express": {
+          "name": "Express Delivery",
+          "description": "Next day delivery available",
+          "time": "1-2 business days",
+          "cost": 60
+        }
+      }
+    },
+    {
+      "id": "4",
+      "sku": "BRUSH-002",
+      "name": "Detail Brush",
+      "category": "brushes",
+      "currentPrice": 80,
+      "originalPrice": 80,
+      "discount": 0,
+      "availability": 35,
+      "rating": 4.5,
+      "reviewsCount": 78,
+      "mainImage": "https://via.placeholder.com/600x500/DFBC94/B53324?text=Detail+Brush",
+      "gallery": [
+        "https://via.placeholder.com/600x500/DFBC94/B53324?text=Detail+Brush+1",
+        "https://via.placeholder.com/600x500/E5A657/B53324?text=Detail+Brush+2",
+        "https://via.placeholder.com/600x500/F5E2CE/B53324?text=Detail+Brush+3"
+      ],
+      "shortDescription": "Precision detail brush perfect for fine line work and intricate details.",
+      "longDescription": "Our Detail Brush is designed for artists who need precision and control. The fine tip allows for detailed work while maintaining excellent paint flow.",
+      "features": [
+        "Ultra-fine synthetic bristles",
+        "Precision tip for detailed work",
+        "Comfortable wooden handle",
+        "Excellent paint flow control",
+        "Perfect for fine lines and details"
+      ],
+      "perfectFor": [
+        "Detail painting",
+        "Fine line work",
+        "Miniature art",
+        "Calligraphy",
+        "Precision artwork"
+      ],
+      "specifications": {
+        "material": "Synthetic Bristles, Wooden Handle",
+        "brushSize": "#0",
+        "handleLength": "7 inches (17.8 cm)",
+        "bristleLength": "0.3 inches (0.8 cm)",
+        "weight": "0.2 lbs (0.09 kg)"
+      },
+      "sizes": [
+        {"name": "Standard", "multiplier": 1.0, "price": 80}
+      ],
+      "reviews": [
+        {
+          "name": "Nour A.",
+          "rating": 5,
+          "date": "3 days ago",
+          "text": "Perfect for detail work! The fine tip gives me excellent control."
+        },
+        {
+          "name": "Youssef M.",
+          "rating": 4,
+          "date": "1 week ago",
+          "text": "Great detail brush, though I wish it was a bit stiffer for my technique."
+        }
+      ],
+      "shipping": {
+        "standard": {
+          "name": "Standard Delivery",
+          "description": "Free shipping on orders over EGP 500",
+          "time": "2-5 business days",
+          "cost": 30
+        },
+        "express": {
+          "name": "Express Delivery",
+          "description": "Next day delivery available",
+          "time": "1-2 business days",
+          "cost": 60
+        }
+      }
+    },
+    {
+      "id": "5",
+      "sku": "PAINT-002",
+      "name": "Oil Paint Set",
+      "category": "paints",
+      "currentPrice": 120,
+      "originalPrice": 120,
+      "discount": 0,
+      "availability": 40,
+      "rating": 4.6,
+      "reviewsCount": 92,
+      "mainImage": "https://via.placeholder.com/600x500/E5A657/B53324?text=Oil+Paints",
+      "gallery": [
+        "https://via.placeholder.com/600x500/E5A657/B53324?text=Oil+Paint+1",
+        "https://via.placeholder.com/600x500/DFBC94/B53324?text=Oil+Paint+2",
+        "https://via.placeholder.com/600x500/F5E2CE/B53324?text=Oil+Paint+3"
+      ],
+      "shortDescription": "Professional oil paint set with rich colors and excellent blending properties.",
+      "longDescription": "Our Oil Paint Set features high-quality pigments that provide rich, vibrant colors perfect for traditional oil painting techniques. These paints offer excellent blending and layering capabilities.",
+      "features": [
+        "High-quality oil-based pigments",
+        "Rich, vibrant colors",
+        "Excellent blending properties",
+        "Long working time",
+        "Professional grade quality"
+      ],
+      "perfectFor": [
+        "Traditional oil painting",
+        "Portrait work",
+        "Landscape painting",
+        "Studio art",
+        "Professional artists"
+      ],
+      "specifications": {
+        "material": "Oil-based Pigments",
+        "colors": "12 colors",
+        "volume": "37ml per tube",
+        "dryingTime": "24-48 hours",
+        "opacity": "Opaque",
+        "viscosity": "Medium-thick"
+      },
+      "sizes": [
+        {"name": "12 Colors", "multiplier": 1.0, "price": 120},
+        {"name": "6 Colors", "multiplier": 0.6, "price": 72},
+        {"name": "18 Colors", "multiplier": 1.4, "price": 168}
+      ],
+      "reviews": [
+        {
+          "name": "Mariam K.",
+          "rating": 5,
+          "date": "2 days ago",
+          "text": "Excellent oil paints! Colors are rich and blend beautifully."
+        },
+        {
+          "name": "Ahmed S.",
+          "rating": 4,
+          "date": "1 week ago",
+          "text": "Great quality paints, though they take longer to dry than expected."
+        }
+      ],
+      "shipping": {
+        "standard": {
+          "name": "Standard Delivery",
+          "description": "Free shipping on orders over EGP 500",
+          "time": "2-5 business days",
+          "cost": 30
+        },
+        "express": {
+          "name": "Express Delivery",
+          "description": "Next day delivery available",
+          "time": "1-2 business days",
+          "cost": 60
+        }
+      }
+    },
+    {
+      "id": "6",
+      "sku": "PAPER-001",
+      "name": "Sketch Paper Pack",
+      "category": "paper",
+      "currentPrice": 60,
+      "originalPrice": 60,
+      "discount": 0,
+      "availability": 80,
+      "rating": 4.4,
+      "reviewsCount": 156,
+      "mainImage": "https://via.placeholder.com/600x500/F5E2CE/B53324?text=Sketch+Paper",
+      "gallery": [
+        "https://via.placeholder.com/600x500/F5E2CE/B53324?text=Sketch+Paper+1",
+        "https://via.placeholder.com/600x500/DFBC94/B53324?text=Sketch+Paper+2",
+        "https://via.placeholder.com/600x500/E5A657/B53324?text=Sketch+Paper+3"
+      ],
+      "shortDescription": "High-quality sketch paper perfect for drawing, sketching, and practice work.",
+      "longDescription": "Our Sketch Paper Pack features acid-free paper with a smooth surface that's perfect for pencil, charcoal, and graphite work. Ideal for both beginners and experienced artists.",
+      "features": [
+        "Acid-free paper",
+        "Smooth surface texture",
+        "Perfect for pencil and charcoal",
+        "Heavy weight for durability",
+        "Great for practice and finished work"
+      ],
+      "perfectFor": [
+        "Sketching",
+        "Drawing practice",
+        "Charcoal work",
+        "Graphite drawings",
+        "Art students"
+      ],
+      "specifications": {
+        "material": "100% Acid-free Paper",
+        "weight": "80 gsm",
+        "size": "A4 (8.3\" x 11.7\")",
+        "sheets": "50 sheets per pack",
+        "surface": "Smooth",
+        "color": "White"
+      },
+      "sizes": [
+        {"name": "50 Sheets", "multiplier": 1.0, "price": 60},
+        {"name": "100 Sheets", "multiplier": 1.8, "price": 108},
+        {"name": "25 Sheets", "multiplier": 0.6, "price": 36}
+      ],
+      "reviews": [
+        {
+          "name": "Layla M.",
+          "rating": 4,
+          "date": "4 days ago",
+          "text": "Good quality paper for sketching. Smooth surface works well with my pencils."
+        },
+        {
+          "name": "Omar K.",
+          "rating": 5,
+          "date": "1 week ago",
+          "text": "Perfect for my art classes. The paper doesn't tear easily and holds graphite well."
+        }
+      ],
+      "shipping": {
+        "standard": {
+          "name": "Standard Delivery",
+          "description": "Free shipping on orders over EGP 500",
+          "time": "2-5 business days",
+          "cost": 30
+        },
+        "express": {
+          "name": "Express Delivery",
+          "description": "Next day delivery available",
+          "time": "1-2 business days",
+          "cost": 60
+        }
+      }
+    },
+    {
+      "id": "7",
+      "sku": "TOOL-001",
+      "name": "Artist Palette",
+      "category": "tools",
+      "currentPrice": 90,
+      "originalPrice": 90,
+      "discount": 0,
+      "availability": 25,
+      "rating": 4.3,
+      "reviewsCount": 67,
+      "mainImage": "https://via.placeholder.com/600x500/DFBC94/B53324?text=Palette",
+      "gallery": [
+        "https://via.placeholder.com/600x500/DFBC94/B53324?text=Palette+1",
+        "https://via.placeholder.com/600x500/E5A657/B53324?text=Palette+2",
+        "https://via.placeholder.com/600x500/F5E2CE/B53324?text=Palette+3"
+      ],
+      "shortDescription": "Professional artist palette with deep wells for mixing paints and comfortable grip.",
+      "longDescription": "Our Artist Palette features deep mixing wells and a comfortable thumb hole for easy handling. Made from durable plastic that's easy to clean and perfect for both studio and outdoor work.",
+      "features": [
+        "Deep mixing wells",
+        "Comfortable thumb hole",
+        "Easy to clean surface",
+        "Lightweight and portable",
+        "Perfect for all paint types"
+      ],
+      "perfectFor": [
+        "Oil painting",
+        "Acrylic painting",
+        "Watercolor mixing",
+        "Studio work",
+        "Outdoor painting"
+      ],
+      "specifications": {
+        "material": "High-quality Plastic",
+        "dimensions": "12\" x 16\" (30.5 x 40.6 cm)",
+        "wells": "12 deep mixing wells",
+        "weight": "0.5 lbs (0.23 kg)",
+        "color": "White"
+      },
+      "sizes": [
+        {"name": "Standard", "multiplier": 1.0, "price": 90},
+        {"name": "Large", "multiplier": 1.3, "price": 117},
+        {"name": "Small", "multiplier": 0.7, "price": 63}
+      ],
+      "reviews": [
+        {
+          "name": "Fatima R.",
+          "rating": 4,
+          "date": "5 days ago",
+          "text": "Good palette with deep wells. Easy to clean and handle."
+        },
+        {
+          "name": "Karim A.",
+          "rating": 5,
+          "date": "2 weeks ago",
+          "text": "Perfect size for my needs. The wells are deep enough for proper mixing."
+        }
+      ],
+      "shipping": {
+        "standard": {
+          "name": "Standard Delivery",
+          "description": "Free shipping on orders over EGP 500",
+          "time": "2-5 business days",
+          "cost": 30
+        },
+        "express": {
+          "name": "Express Delivery",
+          "description": "Next day delivery available",
+          "time": "1-2 business days",
+          "cost": 60
+        }
+      }
+    },
+    {
+      "id": "8",
+      "sku": "BRUSH-003",
+      "name": "Watercolor Brush",
+      "category": "brushes",
+      "currentPrice": 110,
+      "originalPrice": 140,
+      "discount": 21,
+      "availability": 30,
+      "rating": 4.7,
+      "reviewsCount": 89,
+      "mainImage": "https://via.placeholder.com/600x500/E5A657/B53324?text=Watercolor+Brush",
+      "gallery": [
+        "https://via.placeholder.com/600x500/E5A657/B53324?text=Watercolor+Brush+1",
+        "https://via.placeholder.com/600x500/DFBC94/B53324?text=Watercolor+Brush+2",
+        "https://via.placeholder.com/600x500/F5E2CE/B53324?text=Watercolor+Brush+3"
+      ],
+      "shortDescription": "Professional watercolor brush with excellent water retention and flow control.",
+      "longDescription": "Our Watercolor Brush is specially designed for watercolor painting with superior water retention and precise flow control. The natural sable bristles provide excellent performance for both wet and dry techniques.",
+      "features": [
+        "Natural sable bristles",
+        "Excellent water retention",
+        "Precise flow control",
+        "Perfect for watercolor techniques",
+        "Professional grade quality"
+      ],
+      "perfectFor": [
+        "Watercolor painting",
+        "Wet-on-wet techniques",
+        "Fine detail work",
+        "Professional artists",
+        "Watercolor enthusiasts"
+      ],
+      "specifications": {
+        "material": "Natural Sable Bristles, Wooden Handle",
+        "brushSize": "#8",
+        "handleLength": "8.5 inches (21.6 cm)",
+        "bristleLength": "1.2 inches (3 cm)",
+        "weight": "0.3 lbs (0.14 kg)"
+      },
+      "sizes": [
+        {"name": "Standard", "multiplier": 1.0, "price": 110},
+        {"name": "Large", "multiplier": 1.2, "price": 132},
+        {"name": "Small", "multiplier": 0.8, "price": 88}
+      ],
+      "reviews": [
+        {
+          "name": "Sarah H.",
+          "rating": 5,
+          "date": "1 day ago",
+          "text": "Amazing watercolor brush! Holds water perfectly and gives excellent control."
+        },
+        {
+          "name": "Mohamed L.",
+          "rating": 4,
+          "date": "3 days ago",
+          "text": "Great quality brush for watercolor. The sable bristles work beautifully."
+        }
+      ],
+      "shipping": {
+        "standard": {
+          "name": "Standard Delivery",
+          "description": "Free shipping on orders over EGP 500",
+          "time": "2-5 business days",
+          "cost": 30
+        },
+        "express": {
+          "name": "Express Delivery",
+          "description": "Next day delivery available",
+          "time": "1-2 business days",
+          "cost": 60
+        }
+      }
+    },
+    {
+      "id": "9",
+      "sku": "PAINT-003",
+      "name": "Watercolor Set",
+      "category": "paints",
+      "currentPrice": 160,
+      "originalPrice": 160,
+      "discount": 0,
+      "availability": 45,
+      "rating": 4.5,
+      "reviewsCount": 112,
+      "mainImage": "https://via.placeholder.com/600x500/F5E2CE/B53324?text=Watercolor+Set",
+      "gallery": [
+        "https://via.placeholder.com/600x500/F5E2CE/B53324?text=Watercolor+Set+1",
+        "https://via.placeholder.com/600x500/DFBC94/B53324?text=Watercolor+Set+2",
+        "https://via.placeholder.com/600x500/E5A657/B53324?text=Watercolor+Set+3"
+      ],
+      "shortDescription": "Professional watercolor set with vibrant, transparent colors perfect for watercolor techniques.",
+      "longDescription": "Our Watercolor Set features high-quality, transparent pigments that provide beautiful, vibrant colors. These watercolors are perfect for both beginners and professional artists, offering excellent blending and layering capabilities.",
+      "features": [
+        "High-quality transparent pigments",
+        "Vibrant, beautiful colors",
+        "Excellent blending properties",
+        "Perfect for layering",
+        "Professional grade quality"
+      ],
+      "perfectFor": [
+        "Watercolor painting",
+        "Transparent techniques",
+        "Color mixing",
+        "Art classes",
+        "Professional artwork"
+      ],
+      "specifications": {
+        "material": "Watercolor Pigments",
+        "colors": "18 colors",
+        "panSize": "Half pan",
+        "dryingTime": "5-15 minutes",
+        "opacity": "Transparent",
+        "quality": "Professional"
+      },
+      "sizes": [
+        {"name": "18 Colors", "multiplier": 1.0, "price": 160},
+        {"name": "12 Colors", "multiplier": 0.7, "price": 112},
+        {"name": "24 Colors", "multiplier": 1.3, "price": 208}
+      ],
+      "reviews": [
+        {
+          "name": "Amina K.",
+          "rating": 5,
+          "date": "2 days ago",
+          "text": "Beautiful watercolors! Colors are vibrant and blend perfectly."
+        },
+        {
+          "name": "Hassan M.",
+          "rating": 4,
+          "date": "1 week ago",
+          "text": "Great quality set. The colors are transparent and work well for my techniques."
+        }
+      ],
+      "shipping": {
+        "standard": {
+          "name": "Standard Delivery",
+          "description": "Free shipping on orders over EGP 500",
+          "time": "2-5 business days",
+          "cost": 30
+        },
+        "express": {
+          "name": "Express Delivery",
+          "description": "Next day delivery available",
+          "time": "1-2 business days",
+          "cost": 60
+        }
+      }
+    },
+    {
+      "id": "10",
+      "sku": "CANVAS-002",
+      "name": "Stretched Canvas",
+      "category": "canvas",
+      "currentPrice": 250,
+      "originalPrice": 250,
+      "discount": 0,
+      "availability": 20,
+      "rating": 4.8,
+      "reviewsCount": 73,
+      "mainImage": "https://via.placeholder.com/600x500/DFBC94/B53324?text=Stretched+Canvas",
+      "gallery": [
+        "https://via.placeholder.com/600x500/DFBC94/B53324?text=Stretched+Canvas+1",
+        "https://via.placeholder.com/600x500/E5A657/B53324?text=Stretched+Canvas+2",
+        "https://via.placeholder.com/600x500/F5E2CE/B53324?text=Stretched+Canvas+3"
+      ],
+      "shortDescription": "Professional stretched canvas with wooden frame, ready for painting.",
+      "longDescription": "Our Stretched Canvas features a high-quality cotton canvas stretched over a sturdy wooden frame. Pre-primed and ready to use, it's perfect for oil, acrylic, and mixed media painting.",
+      "features": [
+        "100% cotton canvas",
+        "Sturdy wooden frame",
+        "Pre-primed surface",
+        "Ready to use",
+        "Professional quality"
+      ],
+      "perfectFor": [
+        "Oil painting",
+        "Acrylic painting",
+        "Mixed media",
+        "Studio work",
+        "Professional artists"
+      ],
+      "specifications": {
+        "material": "100% Cotton Canvas, Wooden Frame",
+        "size": "24\" x 36\" (61 x 91.4 cm)",
+        "depth": "1.5\" (3.8 cm)",
+        "weight": "2.5 lbs (1.1 kg)",
+        "priming": "Pre-primed with acrylic gesso"
+      },
+      "sizes": [
+        {"name": "24\" x 36\"", "multiplier": 1.0, "price": 250},
+        {"name": "18\" x 24\"", "multiplier": 0.6, "price": 150},
+        {"name": "30\" x 40\"", "multiplier": 1.4, "price": 350}
+      ],
+      "reviews": [
+        {
+          "name": "Nadia S.",
+          "rating": 5,
+          "date": "4 days ago",
+          "text": "Excellent quality canvas! The frame is sturdy and the surface is perfect for painting."
+        },
+        {
+          "name": "Tarek M.",
+          "rating": 5,
+          "date": "1 week ago",
+          "text": "Great stretched canvas. Ready to use and holds paint beautifully."
+        }
+      ],
+      "shipping": {
+        "standard": {
+          "name": "Standard Delivery",
+          "description": "Free shipping on orders over EGP 500",
+          "time": "2-5 business days",
+          "cost": 30
+        },
+        "express": {
+          "name": "Express Delivery",
+          "description": "Next day delivery available",
+          "time": "1-2 business days",
+          "cost": 60
+        }
+      }
+    },
+    {
+      "id": "11",
+      "sku": "TOOL-002",
+      "name": "Table Easel",
+      "category": "tools",
+      "currentPrice": 70,
+      "originalPrice": 70,
+      "discount": 0,
+      "availability": 15,
+      "rating": 4.2,
+      "reviewsCount": 45,
+      "mainImage": "https://via.placeholder.com/600x500/E5A657/B53324?text=Easel",
+      "gallery": [
+        "https://via.placeholder.com/600x500/E5A657/B53324?text=Easel+1",
+        "https://via.placeholder.com/600x500/DFBC94/B53324?text=Easel+2",
+        "https://via.placeholder.com/600x500/F5E2CE/B53324?text=Easel+3"
+      ],
+      "shortDescription": "Compact table easel perfect for small spaces and portable painting.",
+      "longDescription": "Our Table Easel is designed for artists who need a compact, portable solution. It's perfect for tabletop use and can be easily adjusted for different angles and heights.",
+      "features": [
+        "Compact design",
+        "Adjustable angle",
+        "Portable and lightweight",
+        "Perfect for small spaces",
+        "Easy to set up"
+      ],
+      "perfectFor": [
+        "Tabletop painting",
+        "Small spaces",
+        "Portable art",
+        "Studio work",
+        "Art classes"
+      ],
+      "specifications": {
+        "material": "Solid Wood",
+        "height": "12\" (30.5 cm)",
+        "maxCanvasSize": "16\" x 20\"",
+        "weight": "1.2 lbs (0.54 kg)",
+        "foldable": "Yes"
+      },
+      "sizes": [
+        {"name": "Standard", "multiplier": 1.0, "price": 70}
+      ],
+      "reviews": [
+        {
+          "name": "Layla S.",
+          "rating": 4,
+          "date": "6 days ago",
+          "text": "Good table easel for small spaces. Easy to adjust and portable."
+        },
+        {
+          "name": "Ahmed K.",
+          "rating": 4,
+          "date": "2 weeks ago",
+          "text": "Perfect for my apartment. Compact and does the job well."
+        }
+      ],
+      "shipping": {
+        "standard": {
+          "name": "Standard Delivery",
+          "description": "Free shipping on orders over EGP 500",
+          "time": "2-5 business days",
+          "cost": 30
+        },
+        "express": {
+          "name": "Express Delivery",
+          "description": "Next day delivery available",
+          "time": "1-2 business days",
+          "cost": 60
+        }
+      }
+    },
+    {
+      "id": "12",
+      "sku": "PAPER-002",
+      "name": "Watercolor Paper",
+      "category": "paper",
+      "currentPrice": 85,
+      "originalPrice": 85,
+      "discount": 0,
+      "availability": 55,
+      "rating": 4.6,
+      "reviewsCount": 98,
+      "mainImage": "https://via.placeholder.com/600x500/F5E2CE/B53324?text=Watercolor+Paper",
+      "gallery": [
+        "https://via.placeholder.com/600x500/F5E2CE/B53324?text=Watercolor+Paper+1",
+        "https://via.placeholder.com/600x500/DFBC94/B53324?text=Watercolor+Paper+2",
+        "https://via.placeholder.com/600x500/E5A657/B53324?text=Watercolor+Paper+3"
+      ],
+      "shortDescription": "Professional watercolor paper with excellent absorbency and texture.",
+      "longDescription": "Our Watercolor Paper is specially designed for watercolor painting with excellent absorbency and the perfect texture for both wet and dry techniques. Acid-free and archival quality.",
+      "features": [
+        "100% cotton rag paper",
+        "Excellent water absorbency",
+        "Perfect texture for watercolor",
+        "Acid-free and archival",
+        "Professional quality"
+      ],
+      "perfectFor": [
+        "Watercolor painting",
+        "Wet-on-wet techniques",
+        "Professional artwork",
+        "Art classes",
+        "Mixed media"
+      ],
+      "specifications": {
+        "material": "100% Cotton Rag",
+        "weight": "140 lb (300 gsm)",
+        "size": "9\" x 12\" (22.9 x 30.5 cm)",
+        "sheets": "20 sheets per pack",
+        "texture": "Cold press",
+        "color": "White"
+      },
+      "sizes": [
+        {"name": "20 Sheets", "multiplier": 1.0, "price": 85},
+        {"name": "10 Sheets", "multiplier": 0.6, "price": 51},
+        {"name": "40 Sheets", "multiplier": 1.8, "price": 153}
+      ],
+      "reviews": [
+        {
+          "name": "Mariam H.",
+          "rating": 5,
+          "date": "3 days ago",
+          "text": "Excellent watercolor paper! Holds water perfectly and has great texture."
+        },
+        {
+          "name": "Youssef S.",
+          "rating": 4,
+          "date": "1 week ago",
+          "text": "Great quality paper for watercolor. The texture is perfect for my techniques."
+        }
+      ],
+      "shipping": {
+        "standard": {
+          "name": "Standard Delivery",
+          "description": "Free shipping on orders over EGP 500",
+          "time": "2-5 business days",
+          "cost": 30
+        },
+        "express": {
+          "name": "Express Delivery",
+          "description": "Next day delivery available",
+          "time": "1-2 business days",
+          "cost": 60
+        }
+      }
+    },
+    {
+      "id": "13",
+      "sku": "BRUSH-004",
+      "name": "Flat Brush Set",
+      "category": "brushes",
+      "currentPrice": 130,
+      "originalPrice": 130,
+      "discount": 0,
+      "availability": 28,
+      "rating": 4.4,
+      "reviewsCount": 76,
+      "mainImage": "https://via.placeholder.com/600x500/DFBC94/B53324?text=Flat+Brush",
+      "gallery": [
+        "https://via.placeholder.com/600x500/DFBC94/B53324?text=Flat+Brush+1",
+        "https://via.placeholder.com/600x500/E5A657/B53324?text=Flat+Brush+2",
+        "https://via.placeholder.com/600x500/F5E2CE/B53324?text=Flat+Brush+3"
+      ],
+      "shortDescription": "Professional flat brush set perfect for broad strokes and filling large areas.",
+      "longDescription": "Our Flat Brush Set includes multiple sizes of flat brushes designed for broad strokes, filling large areas, and creating clean edges. Perfect for both acrylic and oil painting.",
+      "features": [
+        "Multiple brush sizes",
+        "Flat, square tips",
+        "Perfect for broad strokes",
+        "Clean edge creation",
+        "Professional quality"
+      ],
+      "perfectFor": [
+        "Broad strokes",
+        "Filling large areas",
+        "Clean edges",
+        "Background work",
+        "Professional painting"
+      ],
+      "specifications": {
+        "material": "Synthetic Bristles, Wooden Handle",
+        "brushSizes": "#4, #6, #8, #10",
+        "handleLength": "8 inches (20.3 cm)",
+        "bristleLength": "0.8 - 1.2 inches (2 - 3 cm)",
+        "weight": "0.6 lbs (0.27 kg)"
+      },
+      "sizes": [
+        {"name": "4 Brushes", "multiplier": 1.0, "price": 130},
+        {"name": "2 Brushes", "multiplier": 0.6, "price": 78},
+        {"name": "6 Brushes", "multiplier": 1.4, "price": 182}
+      ],
+      "reviews": [
+        {
+          "name": "Fatima A.",
+          "rating": 4,
+          "date": "5 days ago",
+          "text": "Good flat brushes for broad strokes. The set covers all the sizes I need."
+        },
+        {
+          "name": "Omar R.",
+          "rating": 5,
+          "date": "1 week ago",
+          "text": "Excellent flat brush set! Perfect for filling backgrounds and large areas."
+        }
+      ],
+      "shipping": {
+        "standard": {
+          "name": "Standard Delivery",
+          "description": "Free shipping on orders over EGP 500",
+          "time": "2-5 business days",
+          "cost": 30
+        },
+        "express": {
+          "name": "Express Delivery",
+          "description": "Next day delivery available",
+          "time": "1-2 business days",
+          "cost": 60
+        }
+      }
+    },
+    {
+      "id": "14",
+      "sku": "PAINT-004",
+      "name": "Gouache Paint Set",
+      "category": "paints",
+      "currentPrice": 95,
+      "originalPrice": 120,
+      "discount": 21,
+      "availability": 35,
+      "rating": 4.3,
+      "reviewsCount": 67,
+      "mainImage": "https://via.placeholder.com/600x500/E5A657/B53324?text=Gouache+Set",
+      "gallery": [
+        "https://via.placeholder.com/600x500/E5A657/B53324?text=Gouache+Set+1",
+        "https://via.placeholder.com/600x500/DFBC94/B53324?text=Gouache+Set+2",
+        "https://via.placeholder.com/600x500/F5E2CE/B53324?text=Gouache+Set+3"
+      ],
+      "shortDescription": "Professional gouache paint set with opaque, matte finish perfect for illustration.",
+      "longDescription": "Our Gouache Paint Set features high-quality, opaque pigments that provide a beautiful matte finish. Perfect for illustration, design work, and artists who prefer opaque colors.",
+      "features": [
+        "Opaque, matte finish",
+        "High-quality pigments",
+        "Excellent coverage",
+        "Perfect for illustration",
+        "Professional quality"
+      ],
+      "perfectFor": [
+        "Illustration",
+        "Design work",
+        "Poster art",
+        "Commercial art",
+        "Opaque painting"
+      ],
+      "specifications": {
+        "material": "Gouache Pigments",
+        "colors": "12 colors",
+        "panSize": "Half pan",
+        "dryingTime": "10-20 minutes",
+        "opacity": "Opaque",
+        "finish": "Matte"
+      },
+      "sizes": [
+        {"name": "12 Colors", "multiplier": 1.0, "price": 95},
+        {"name": "6 Colors", "multiplier": 0.6, "price": 57},
+        {"name": "18 Colors", "multiplier": 1.4, "price": 133}
+      ],
+      "reviews": [
+        {
+          "name": "Nour K.",
+          "rating": 4,
+          "date": "4 days ago",
+          "text": "Good gouache set for illustration work. Colors are opaque and cover well."
+        },
+        {
+          "name": "Karim S.",
+          "rating": 4,
+          "date": "1 week ago",
+          "text": "Nice gouache paints. The matte finish is perfect for my illustration style."
+        }
+      ],
+      "shipping": {
+        "standard": {
+          "name": "Standard Delivery",
+          "description": "Free shipping on orders over EGP 500",
+          "time": "2-5 business days",
+          "cost": 30
+        },
+        "express": {
+          "name": "Express Delivery",
+          "description": "Next day delivery available",
+          "time": "1-2 business days",
+          "cost": 60
+        }
+      }
+    },
+    {
+      "id": "15",
+      "sku": "TOOL-003",
+      "name": "Portable Art Case",
+      "category": "tools",
+      "currentPrice": 140,
+      "originalPrice": 140,
+      "discount": 0,
+      "availability": 18,
+      "rating": 4.5,
+      "reviewsCount": 89,
+      "mainImage": "https://via.placeholder.com/600x500/F5E2CE/B53324?text=Art+Case",
+      "gallery": [
+        "https://via.placeholder.com/600x500/F5E2CE/B53324?text=Art+Case+1",
+        "https://via.placeholder.com/600x500/DFBC94/B53324?text=Art+Case+2",
+        "https://via.placeholder.com/600x500/E5A657/B53324?text=Art+Case+3"
+      ],
+      "shortDescription": "Portable art case with multiple compartments for organizing art supplies.",
+      "longDescription": "Our Portable Art Case is designed for artists on the go. It features multiple compartments, secure closures, and durable construction to protect and organize your art supplies.",
+      "features": [
+        "Multiple compartments",
+        "Secure closures",
+        "Durable construction",
+        "Portable design",
+        "Perfect organization"
+      ],
+      "perfectFor": [
+        "Artists on the go",
+        "Art classes",
+        "Outdoor painting",
+        "Supply organization",
+        "Travel"
+      ],
+      "specifications": {
+        "material": "Durable Plastic, Metal Hinges",
+        "dimensions": "14\" x 10\" x 3\" (35.6 x 25.4 x 7.6 cm)",
+        "weight": "2.0 lbs (0.91 kg)",
+        "compartments": "12 compartments",
+        "closure": "Metal latches"
+      },
+      "sizes": [
+        {"name": "Standard", "multiplier": 1.0, "price": 140},
+        {"name": "Large", "multiplier": 1.3, "price": 182},
+        {"name": "Small", "multiplier": 0.8, "price": 112}
+      ],
+      "reviews": [
+        {
+          "name": "Layla R.",
+          "rating": 5,
+          "date": "2 days ago",
+          "text": "Excellent art case! Perfect for organizing all my supplies and very portable."
+        },
+        {
+          "name": "Ahmed M.",
+          "rating": 4,
+          "date": "1 week ago",
+          "text": "Great case for organizing art supplies. Sturdy construction and good compartments."
+        }
+      ],
+      "shipping": {
+        "standard": {
+          "name": "Standard Delivery",
+          "description": "Free shipping on orders over EGP 500",
+          "time": "2-5 business days",
+          "cost": 30
+        },
+        "express": {
+          "name": "Express Delivery",
+          "description": "Next day delivery available",
+          "time": "1-2 business days",
+          "cost": 60
+        }
+      }
+    }
+  ]
+}

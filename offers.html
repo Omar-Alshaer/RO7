@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offers - Ro7 Art Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/offers-styles.css">
+    <link rel="stylesheet" href="css/footer-styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-text">Ro7</div>
+                <span class="logo-subtitle">Art Hub</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="shop.html" class="nav-link">Shop</a></li>
+                <li><a href="offers.html" class="nav-link active">Offers</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="cart.html" class="nav-link cart-icon">
+                    <span class="cart-count">0</span>
+                    🛒
+                </a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" data-theme="light">
+                <span class="icon sun-icon">☀️</span>
+                <span class="icon moon-icon">🌙</span>
+            </button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Offers Header -->
+    <section class="offers-header">
+        <div class="container">
+            <h1 class="offers-title">Special Offers</h1>
+            <p class="offers-subtitle">Limited time deals on premium art supplies</p>
+        </div>
+    </section>
+
+    <!-- Featured Offer -->
+    <section class="featured-offer">
+        <div class="container">
+            <div class="offer-banner">
+                <div class="offer-content">
+                    <div class="offer-badge">🔥 HOT DEAL</div>
+                    <h2>Summer Art Collection</h2>
+                    <p>Get up to 40% off on selected art supplies</p>
+                    <div class="countdown-timer" id="countdown-timer">
+                        <div class="timer-item">
+                            <span class="timer-number" id="days">00</span>
+                            <span class="timer-label">Days</span>
+                        </div>
+                        <div class="timer-item">
+                            <span class="timer-number" id="hours">00</span>
+                            <span class="timer-label">Hours</span>
+                        </div>
+                        <div class="timer-item">
+                            <span class="timer-number" id="minutes">00</span>
+                            <span class="timer-label">Minutes</span>
+                        </div>
+                        <div class="timer-item">
+                            <span class="timer-number" id="seconds">00</span>
+                            <span class="timer-label">Seconds</span>
+                        </div>
+                    </div>
+                    <a href="shop.html" class="btn btn-primary">Shop Now</a>
+                </div>
+                <div class="offer-image">
+                    <img src="https://via.placeholder.com/400x300/DFBC94/B53324?text=Summer+Sale" alt="Summer Art Collection">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offers Grid -->
+    <section class="offers-grid">
+        <div class="container">
+            <h2 class="section-title">Current Offers</h2>
+            <div class="offers-container">
+                <!-- Offer 1 -->
+                <div class="offer-card">
+                    <div class="offer-image">
+                        <img src="https://via.placeholder.com/300x200/E5A657/B53324?text=Brush+Set" alt="Brush Set Offer">
+                        <div class="discount-badge">-25%</div>
+                    </div>
+                    <div class="offer-content">
+                        <h3>Professional Brush Set</h3>
+                        <p>Complete set of 12 professional art brushes</p>
+                        <div class="price-info">
+                            <span class="original-price">EGP 200</span>
+                            <span class="sale-price">EGP 150</span>
+                        </div>
+                        <div class="offer-details">
+                            <span class="offer-type">Limited Time</span>
+                            <span class="stock-status">Only 5 left!</span>
+                        </div>
+                        <button class="btn btn-primary add-to-cart" data-id="1" data-name="Professional Brush Set" data-price="150">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Offer 2 -->
+                <div class="offer-card">
+                    <div class="offer-image">
+                        <img src="https://via.placeholder.com/300x200/F5E2CE/B53324?text=Paint+Set" alt="Paint Set Offer">
+                        <div class="discount-badge">-30%</div>
+                    </div>
+                    <div class="offer-content">
+                        <h3>Acrylic Paint Collection</h3>
+                        <p>24 vibrant colors in professional quality</p>
+                        <div class="price-info">
+                            <span class="original-price">EGP 300</span>
+                            <span class="sale-price">EGP 210</span>
+                        </div>
+                        <div class="offer-details">
+                            <span class="offer-type">Flash Sale</span>
+                            <span class="stock-status">In Stock</span>
+                        </div>
+                        <button class="btn btn-primary add-to-cart" data-id="3" data-name="Acrylic Paint Collection" data-price="210">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Offer 3 -->
+                <div class="offer-card">
+                    <div class="offer-image">
+                        <img src="https://via.placeholder.com/300x200/DFBC94/B53324?text=Canvas+Bundle" alt="Canvas Bundle Offer">
+                        <div class="discount-badge">-35%</div>
+                    </div>
+                    <div class="offer-content">
+                        <h3>Canvas Bundle Pack</h3>
+                        <p>10 premium stretched canvases in various sizes</p>
+                        <div class="price-info">
+                            <span class="original-price">EGP 400</span>
+                            <span class="sale-price">EGP 260</span>
+                        </div>
+                        <div class="offer-details">
+                            <span class="offer-type">Bundle Deal</span>
+                            <span class="stock-status">Limited Stock</span>
+                        </div>
+                        <button class="btn btn-primary add-to-cart" data-id="2" data-name="Canvas Bundle Pack" data-price="260">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Offer 4 -->
+                <div class="offer-card">
+                    <div class="offer-image">
+                        <img src="https://via.placeholder.com/300x200/E5A657/B53324?text=Art+Kit" alt="Art Kit Offer">
+                        <div class="discount-badge">-20%</div>
+                    </div>
+                    <div class="offer-content">
+                        <h3>Complete Art Starter Kit</h3>
+                        <p>Everything you need to start your artistic journey</p>
+                        <div class="price-info">
+                            <span class="original-price">EGP 500</span>
+                            <span class="sale-price">EGP 400</span>
+                        </div>
+                        <div class="offer-details">
+                            <span class="offer-type">New Artist</span>
+                            <span class="stock-status">In Stock</span>
+                        </div>
+                        <button class="btn btn-primary add-to-cart" data-id="4" data-name="Complete Art Starter Kit" data-price="400">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Offer 5 -->
+                <div class="offer-card">
+                    <div class="offer-image">
+                        <img src="https://via.placeholder.com/300x200/F5E2CE/B53324?text=Watercolor+Set" alt="Watercolor Set Offer">
+                        <div class="discount-badge">-40%</div>
+                    </div>
+                    <div class="offer-content">
+                        <h3>Premium Watercolor Set</h3>
+                        <p>36 professional watercolor pans with case</p>
+                        <div class="price-info">
+                            <span class="original-price">EGP 250</span>
+                            <span class="sale-price">EGP 150</span>
+                        </div>
+                        <div class="offer-details">
+                            <span class="offer-type">Clearance</span>
+                            <span class="stock-status">Last 3!</span>
+                        </div>
+                        <button class="btn btn-primary add-to-cart" data-id="5" data-name="Premium Watercolor Set" data-price="150">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Offer 6 -->
+                <div class="offer-card">
+                    <div class="offer-image">
+                        <img src="https://via.placeholder.com/300x200/DFBC94/B53324?text=Sketch+Set" alt="Sketch Set Offer">
+                        <div class="discount-badge">-15%</div>
+                    </div>
+                    <div class="offer-content">
+                        <h3>Sketching Essentials</h3>
+                        <p>Graphite pencils, erasers, and sketchbook</p>
+                        <div class="price-info">
+                            <span class="original-price">EGP 120</span>
+                            <span class="sale-price">EGP 102</span>
+                        </div>
+                        <div class="offer-details">
+                            <span class="offer-type">Student</span>
+                            <span class="stock-status">In Stock</span>
+                        </div>
+                        <button class="btn btn-primary add-to-cart" data-id="6" data-name="Sketching Essentials" data-price="102">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated with New Offers</h2>
+                <p>Subscribe to our newsletter and be the first to know about exclusive deals and new arrivals</p>
+                <form class="newsletter-form" action="https://formspree.io/f/xkgvngjq" method="POST">
+                    <input type="email" name="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/cart-common.js"></script>
+    <script src="js/products-loader.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/offers-script.js"></script>
+    
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-text">Ro7</div>
+                        <span class="logo-subtitle">Art Hub</span>
+                    </div>
+                    <p class="footer-description">
+                        The soul of art and creativity in every product. We provide the finest fine arts supplies for artists and students in Egypt.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">📺</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="offers.html">Offers</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Product Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="shop.html?category=brushes">Brushes</a></li>
+                        <li><a href="shop.html?category=paints">Paints</a></li>
+                        <li><a href="shop.html?category=canvas">Canvas</a></li>
+                        <li><a href="shop.html?category=tools">Tools</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <!-- Newsletter Section - Centered -->
+    <div class="footer-newsletter-center">
+        <div class="container">
+            <div class="newsletter-center-content">
+                <h3 class="newsletter-center-title">Stay Creative!</h3>
+                <p class="newsletter-center-description">Subscribe for exclusive art tips & offers</p>
+                <form class="newsletter-center-form" id="footer-newsletter-form">
+                    <div class="newsletter-center-input-group">
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                        <button type="submit" class="newsletter-center-submit-btn">
+                            <span class="btn-text">Subscribe</span>
+                        </button>
+                    </div>
+                </form>
+                <div class="newsletter-message" id="newsletter-message"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Artistic Elements -->
+            </div>
+        </div>
+    </div>
+    <!-- Artistic Elements -->
+    <div class="footer-artistic">
+        <div class="artistic-line"></div>
+        <div class="artistic-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="artistic-line"></div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom-content">
+                <div class="copyright">
+                    <p>&copy; 2025 Ro7 Art Hub. All rights reserved.</p>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Return Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product - Ro7 Art Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/product-styles.css">
+    <link rel="stylesheet" href="css/footer-styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-text">Ro7</div>
+                <span class="logo-subtitle">Art Hub</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="shop.html" class="nav-link">Shop</a></li>
+                <li><a href="offers.html" class="nav-link">Offers</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="cart.html" class="nav-link cart-icon">
+                    <span class="cart-count">0</span>
+                    🛒
+                </a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" data-theme="light">
+                <span class="icon sun-icon">☀️</span>
+                <span class="icon moon-icon">🌙</span>
+            </button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Header -->
+    <section class="product-header">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="index.html">Home</a> &gt;
+                <a href="shop.html">Shop</a> &gt;
+                <span>Professional Art Brush Set</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Product Main Section -->
+    <section class="product-main">
+        <div class="container">
+            <div class="product-layout">
+                <!-- Product Images -->
+                <div class="product-images">
+                    <div class="main-image-container">
+                        <img id="main-image" src="https://via.placeholder.com/600x500/DFBC94/B53324?text=Main+Image" alt="Professional Art Brush Set">
+                        <div class="image-overlay">
+                            <button class="zoom-btn" id="zoom-btn">🔍</button>
+                        </div>
+                    </div>
+                    <div class="thumbnail-gallery">
+                        <div class="thumbnail active" data-image="https://via.placeholder.com/600x500/DFBC94/B53324?text=Main+Image">
+                            <img src="https://via.placeholder.com/120x100/DFBC94/B53324?text=1" alt="Thumbnail 1">
+                        </div>
+                        <div class="thumbnail" data-image="https://via.placeholder.com/600x500/E5A657/B53324?text=Image+2">
+                            <img src="https://via.placeholder.com/120x100/E5A657/B53324?text=2" alt="Thumbnail 2">
+                        </div>
+                        <div class="thumbnail" data-image="https://via.placeholder.com/600x500/B53324/DFBC94?text=Image+3">
+                            <img src="https://via.placeholder.com/120x100/B53324/DFBC94?text=3" alt="Thumbnail 3">
+                        </div>
+                        <div class="thumbnail" data-image="https://via.placeholder.com/600x500/DFBC94/E5A657?text=Image+4">
+                            <img src="https://via.placeholder.com/120x100/DFBC94/E5A657?text=4" alt="Thumbnail 4">
+                        </div>
+                        <div class="thumbnail" data-image="https://via.placeholder.com/600x500/E5A657/DFBC94?text=Image+5">
+                            <img src="https://via.placeholder.com/120x100/E5A657/DFBC94?text=5" alt="Thumbnail 5">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Details -->
+                <div class="product-details">
+                    <h1 class="product-title">Professional Art Brush Set</h1>
+                    <div class="product-rating">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <span class="rating-text">4.8 (127 reviews)</span>
+                    </div>
+                    
+                    <div class="product-price">
+                        <span class="current-price">EGP 180</span>
+                        <span class="original-price">EGP 220</span>
+                        <span class="discount-badge">Save 18%</span>
+                    </div>
+                    
+                    <div class="product-description">
+                        <p>Premium quality art brushes perfect for fine arts students and professional artists. This comprehensive set includes various brush types for different painting techniques.</p>
+                    </div>
+                    
+
+                    
+                    <div class="product-actions">
+                        <button class="btn btn-primary add-to-cart" id="add-to-cart" data-id="BRUSH-001" data-name="Professional Art Brush Set" data-price="180">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-secondary wishlist-btn" id="wishlist-btn">
+                            ♡ Add to Wishlist
+                        </button>
+                    </div>
+                    
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Availability:</span>
+                            <span class="meta-value in-stock">In Stock (45 available)</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">SKU:</span>
+                            <span class="meta-value">BRUSH-001</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Category:</span>
+                            <span class="meta-value">Brushes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Specifications -->
+    <section class="product-specs">
+        <div class="container">
+            <div class="specs-tabs">
+                <button class="tab-btn active" data-tab="description">Description</button>
+                <button class="tab-btn" data-tab="specifications">Specifications</button>
+                <button class="tab-btn" data-tab="reviews">Reviews</button>
+                <button class="tab-btn" data-tab="shipping">Shipping</button>
+            </div>
+            
+            <div class="tab-content">
+                <div class="tab-pane active" id="description">
+                    <h3>Product Description</h3>
+                    <p class="description-text">Loading...</p>
+                    
+                    <h4>Features:</h4>
+                    <ul class="features-list">
+                        <!-- Features will be loaded from JSON -->
+                    </ul>
+                    
+                    <h4>Perfect For:</h4>
+                    <ul class="perfect-for-list">
+                        <!-- Perfect for will be loaded from JSON -->
+                    </ul>
+                </div>
+                
+                <div class="tab-pane" id="specifications">
+                    <h3>Technical Specifications</h3>
+                    <div class="specs-grid">
+                        <!-- Specifications will be loaded from JSON -->
+                    </div>
+                </div>
+                
+                <div class="tab-pane" id="reviews">
+                    <h3>Customer Reviews</h3>
+                    <div class="reviews-summary">
+                        <div class="overall-rating">
+                            <div class="rating-number">Loading...</div>
+                            <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+                            <div class="rating-text">Loading...</div>
+                        </div>
+                        <div class="rating-breakdown">
+                            <!-- Rating breakdown will be loaded from JSON -->
+                        </div>
+                    </div>
+                    
+                    <div class="reviews-list">
+                        <!-- Reviews will be loaded from JSON -->
+                    </div>
+                </div>
+                
+                <div class="tab-pane" id="shipping">
+                    <h3>Shipping Information</h3>
+                    <div class="shipping-info">
+                        <div class="shipping-option">
+                            <h4>Standard Delivery</h4>
+                            <p>Free shipping on orders over EGP 500</p>
+                            <p>Delivery time: 2-5 business days</p>
+                            <p>Cost: EGP 30</p>
+                        </div>
+                        
+                        <div class="shipping-option">
+                            <h4>Express Delivery</h4>
+                            <p>Next day delivery available</p>
+                            <p>Delivery time: 1-2 business days</p>
+                            <p>Cost: EGP 80</p>
+                        </div>
+                        
+                        <div class="shipping-option">
+                            <h4>Pickup</h4>
+                            <p>Free pickup from our store</p>
+                            <p>Available same day</p>
+                            <p>Cost: Free</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+        <div class="container">
+            <h2 class="section-title">Related Products</h2>
+            <div class="products-grid" id="related-products-grid">
+                <!-- Related products will be dynamically loaded from JSON -->
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+    <script src="js/cart-common.js"></script>
+    <script src="js/products-loader.js"></script>
+    <script src="js/product-script.js"></script>
+    
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-text">Ro7</div>
+                        <span class="logo-subtitle">Art Hub</span>
+                    </div>
+                    <p class="footer-description">
+                        The soul of art and creativity in every product. We provide the finest fine arts supplies for artists and students in Egypt.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">📺</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="offers.html">Offers</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Product Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="shop.html?category=brushes">Brushes</a></li>
+                        <li><a href="shop.html?category=paints">Paints</a></li>
+                        <li><a href="shop.html?category=canvas">Canvas</a></li>
+                        <li><a href="shop.html?category=tools">Tools</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Artistic Elements -->
+        <div class="footer-artistic">
+            <div class="artistic-line"></div>
+            <div class="artistic-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="artistic-line"></div>
+        </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom-content">
+                <div class="copyright">
+                    <p>&copy; 2025 Ro7 Art Hub. All rights reserved.</p>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Return Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

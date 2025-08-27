@@ -1,0 +1,84 @@
+{
+  "promo_codes": [
+    {
+      "code": "WELCOME10",
+      "discount_percentage": 10,
+      "description": "Welcome discount for new customers",
+      "min_order": 100,
+      "max_discount": 50,
+      "valid_until": "2025-12-31",
+      "usage_limit": 1000,
+      "used_count": 0
+    },
+    {
+      "code": "ARTIST20",
+      "discount_percentage": 20,
+      "description": "Special discount for artists",
+      "min_order": 200,
+      "max_discount": 100,
+      "valid_until": "2025-12-31",
+      "usage_limit": 500,
+      "used_count": 0
+    },
+    {
+      "code": "STUDENT15",
+      "discount_percentage": 15,
+      "description": "Student discount",
+      "min_order": 150,
+      "max_discount": 75,
+      "valid_until": "2025-12-31",
+      "usage_limit": 2000,
+      "used_count": 0
+    },
+    {
+      "code": "SUMMER25",
+      "discount_percentage": 25,
+      "description": "Summer sale discount",
+      "min_order": 300,
+      "max_discount": 150,
+      "valid_until": "2025-08-31",
+      "usage_limit": 300,
+      "used_count": 0
+    },
+    {
+      "code": "FIRST5",
+      "discount_percentage": 5,
+      "description": "First order discount",
+      "min_order": 50,
+      "max_discount": 25,
+      "valid_until": "2025-12-31",
+      "usage_limit": 5000,
+      "used_count": 0
+    },
+    {
+      "code": "VIP30",
+      "discount_percentage": 30,
+      "description": "VIP customer discount",
+      "min_order": 500,
+      "max_discount": 200,
+      "valid_until": "2025-12-31",
+      "usage_limit": 100,
+      "used_count": 0
+    },
+    {
+      "code": "BULK40",
+      "discount_percentage": 40,
+      "description": "Bulk order discount",
+      "min_order": 1000,
+      "max_discount": 400,
+      "valid_until": "2025-12-31",
+      "usage_limit": 50,
+      "used_count": 0
+    },
+    {
+      "code": "FLASH50",
+      "discount_percentage": 50,
+      "description": "Flash sale - limited time",
+      "min_order": 800,
+      "max_discount": 300,
+      "valid_until": "2025-06-30",
+      "usage_limit": 100,
+      "used_count": 0
+    }
+  ]
+}

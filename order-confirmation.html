@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation - Ro7 Art Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/confirmation-styles.css">
+    <link rel="stylesheet" href="css/footer-styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-text">Ro7</div>
+                <span class="logo-subtitle">Art Hub</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="shop.html" class="nav-link">Shop</a></li>
+                <li><a href="offers.html" class="nav-link">Offers</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="cart.html" class="nav-link cart-icon">
+                    <span class="cart-count">0</span>
+                    🛒
+                </a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" data-theme="light">
+                <span class="icon sun-icon">☀️</span>
+                <span class="icon moon-icon">🌙</span>
+            </button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Confirmation Header -->
+    <section class="confirmation-header">
+        <div class="container">
+            <div class="success-icon">✅</div>
+            <h1 class="confirmation-title">Order Confirmed!</h1>
+            <p class="confirmation-subtitle">Thank you for your order. We're excited to fulfill your creative needs!</p>
+        </div>
+    </section>
+
+    <!-- Order Details -->
+    <section class="order-details">
+        <div class="container">
+            <div class="order-receipt">
+                <div class="receipt-header">
+                    <h2>Order Receipt</h2>
+                    <div class="order-id" id="order-id">RO7-000000</div>
+                </div>
+                
+                <div class="receipt-content">
+                    <div class="customer-info">
+                        <h3>Customer Information</h3>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <span class="label">Name:</span>
+                                <span class="value" id="customer-name">-</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Phone:</span>
+                                <span class="value" id="customer-phone">-</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Governorate:</span>
+                                <span class="value" id="customer-governorate">-</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Address:</span>
+                                <span class="value" id="customer-address">-</span>
+                            </div>
+                            <div class="info-item" id="notes-item" style="display: none;">
+                                <span class="label">Notes:</span>
+                                <span class="value" id="customer-notes">-</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="order-items">
+                        <h3>Order Items</h3>
+                        <div id="order-items-list" class="items-list">
+                            <!-- Order items will be populated -->
+                        </div>
+                    </div>
+                    
+                    <div class="order-summary">
+                        <h3>Order Summary</h3>
+                        <div class="summary-grid">
+                            <div class="summary-item">
+                                <span class="label">Subtotal:</span>
+                                <span class="value" id="summary-subtotal">EGP 0</span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="label">Shipping (to <span id="summary-governorate">-</span>):</span>
+                                <span class="value" id="summary-shipping">EGP 30</span>
+                            </div>
+                            <div class="summary-item" id="summary-discount" style="display: none;">
+                                <span class="label">Discount:</span>
+                                <span class="value" id="summary-discount-value">-EGP 0</span>
+                            </div>
+                            <div class="summary-item total">
+                                <span class="label">Total:</span>
+                                <span class="value" id="summary-total">EGP 0</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="order-meta">
+                        <div class="meta-item">
+                            <span class="label">Order Date:</span>
+                            <span class="value" id="order-date">-</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="label">Status:</span>
+                            <span class="value status-pending">Pending Confirmation</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Print Receipt Section -->
+                    <div class="print-receipt-section">
+                        <h3>Print Receipt</h3>
+                        <p>Click the button below to print or save your receipt as a PDF/image.</p>
+                        <button id="print-receipt-btn" class="btn btn-primary print-btn">
+                            <span class="btn-text">🖨️ Print Receipt</span>
+                            <span class="btn-loading hidden">Printing...</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Steps -->
+    <section class="next-steps">
+        <div class="container">
+            <h2>What Happens Next?</h2>
+            <div class="steps-grid">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <h3>WhatsApp Confirmation</h3>
+                    <p>Our team will contact you via WhatsApp to confirm your order details and discuss payment options.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <h3>Payment Processing</h3>
+                    <p>Once confirmed, you can choose your preferred payment method (Cash on Delivery, Bank Transfer, etc.).</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <h3>Order Preparation</h3>
+                    <p>We'll carefully prepare your art supplies and arrange for delivery to your address.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <h3>Delivery</h3>
+                    <p>Your order will be delivered to your doorstep within 2-5 business days.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="contact-content">
+                <h2>Need Help?</h2>
+                <p>Our team is here to assist you with any questions about your order.</p>
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="method-icon">📱</div>
+                        <h3>WhatsApp</h3>
+                        <p>+20 128 354 8248</p>
+                        <a href="https://wa.me/201283548248" class="btn btn-primary" target="_blank">Chat Now</a>
+                    </div>
+                    <div class="contact-method">
+                        <div class="method-icon">📧</div>
+                        <h3>Email</h3>
+                        <p>info@ro7arthub.com</p>
+                        <a href="mailto:info@ro7arthub.com" class="btn btn-secondary">Send Email</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Action Buttons -->
+    <section class="action-buttons">
+        <div class="container">
+            <div class="actions-grid">
+                <a href="shop.html" class="btn btn-primary">Continue Shopping</a>
+                <a href="index.html" class="btn btn-secondary">Back to Home</a>
+                <button id="print-receipt" class="btn btn-secondary">Print Receipt</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/cart-common.js"></script>
+    <script src="js/products-loader.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/confirmation-script.js"></script>
+    
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-text">Ro7</div>
+                        <span class="logo-subtitle">Art Hub</span>
+                    </div>
+                    <p class="footer-description">
+                        The soul of art and creativity in every product. We provide the finest fine arts supplies for artists and students in Egypt.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">📺</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="offers.html">Offers</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Product Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="shop.html?category=brushes">Brushes</a></li>
+                        <li><a href="shop.html?category=paints">Paints</a></li>
+                        <li><a href="shop.html?category=canvas">Canvas</a></li>
+                        <li><a href="shop.html?category=tools">Tools</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>        
+    <!-- Artistic Elements -->
+    <div class="footer-artistic">
+        <div class="artistic-line"></div>
+        <div class="artistic-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="artistic-line"></div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom-content">
+                <div class="copyright">
+                    <p>&copy; 2025 Ro7 Art Hub. All rights reserved.</p>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Return Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
